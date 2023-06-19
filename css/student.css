@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
+
+body {
+  font-family: "Varela", sans-serif;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../alexander-andrews-fsH1KjbdjE8-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-title {
+  color: aqua;
+  font-weight: 600;
+  margin: 10px 0 20px;
+}
+
+.input-group {
+  overflow: hidden;
+}
+
+.form-control {
+  overflow: hidden;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #ccc;
+  transition: transform 0.3s;
+  border-color: aqua;
+}
+
+.form-control::placeholder {
+  color: #ccc;
+  font-weight: 500;
+}
+
+/*card start*/
+
+.card {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  backdrop-filter: contrast(150%);
+  /* backdrop-filter: blur(2px); */
+  /* backdrop-filter: brightness(150%); */
+  /* backdrop-filter: grayscale(100%); */
+  /* backdrop-filter: sepia(100%); */
+  /* backdrop-filter: hue-rotate(90deg); */
+  /* backdrop-filter: invert(100%); */
+  margin-bottom: 25px;
+  overflow: hidden;
+  transition: 0.8s;
+}
+.card:hover img {
+  transform: scale(1.05);
+  transition: 0.7s;
+}
+
+.card-title {
+  color: aqua;
+  font-size: 24px;
+  text-align: center;
+}
+
+.card-text {
+  color: aqua;
+  text-align: center;
+}
+
+.card-text:nth-child(2) {
+  font-size: 20px;
+}
+.card-text:nth-child(3) {
+  font-size: 12px;
+}
+.groups {
+  color: aqua;
+  text-align: center;
+  font-size: 14px;
+}
+.card-tel {
+  color: aqua;
+  text-align: center;
+  font-size: 14px;
+  margin: 2px 0;
+}
+.isMarried {
+  color: aqua;
+  text-align: center;
+  font-size: 14px;
+}
+
+/**/
+.btn-success {
+  /*edit*/
+  padding: 6px 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid aqua;
+  color: #000;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+  font-weight: 500;
+  margin-right: 29px;
+  color: #ccc;
+  width: 42%;
+}
+
+.btn-success::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: rgba(112, 248, 33, 0.6);
+  transform: rotate(45deg) scale(0);
+  transition: transform 0.5s;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.btn-success:hover {
+  transform: scale(1);
+  color: #000;
+  background-color: #fff;
+  border-color: greenyellow;
+}
+
+.btn-success:hover::before {
+  transform: rotate(45deg) scale(1);
+  opacity: 1;
+  transition-delay: 0.1s;
+  color: #fff;
+}
+
+/**/
+
+.btn-danger {
+  /*delete*/
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid aqua;
+  color: #000;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+  font-weight: 500;
+  color: #ccc;
+  width: 43%;
+}
+
+.btn-danger::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: rgba(248, 47, 33, 0.6);
+  transform: rotate(45deg) scale(0);
+  transition: transform 0.5s;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.btn-danger:hover {
+  transform: scale(1);
+  color: #000;
+  background-color: #fff;
+  border-color: greenyellow;
+}
+
+.btn-danger:hover::before {
+  transform: rotate(45deg) scale(1);
+  opacity: 1;
+  transition-delay: 0.1s;
+  color: #fff;
+}
+/**/
+.btn-secondary {
+  background-color: transparent;
+  color: #ccc;
+  border-color: #ccc;
+}
+.btn-secondary:hover {
+  background-color: hsl(240, 35%, 20%);
+  color: aqua;
+}
+
+/**/
+.btn-outline-secondary {
+  background-color: transparent;
+  color: #ccc;
+  border-color: #ccc;
+}
+.btn-outline-secondary:hover {
+  background-color: hsl(240, 35%, 20%);
+  color: aqua;
+}
+
+/**/
+.btn-primary {
+  /*see student*/
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid aqua;
+  color: #000;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+  font-weight: 500;
+  width: 100%;
+  margin-top: 5px;
+  color: #ccc;
+}
+
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: rgba(33, 108, 248, 0.6);
+  transform: rotate(45deg) scale(0);
+  transition: transform 0.5s;
+  pointer-events: none;
+  opacity: 0;
+  color: #ccc;
+}
+
+.btn-primary:hover {
+  transform: scale(1);
+  color: #fff;
+  background-color: transparent;
+  border-color: greenyellow;
+}
+
+.btn-primary:hover::before {
+  transform: rotate(45deg) scale(1);
+  opacity: 1;
+  transition-delay: 0.1s;
+  color: #fff;
+  border-color: #000;
+}
+/**/
+
+.modal-footer button {
+  /*edit*/
+  padding: 6px 20px;
+  background-color: transparent;
+  border: 1px solid aqua;
+  color: #000;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+  font-weight: 500;
+  margin-right: 29px;
+  color: aqua;
+  width: 42%;
+}
+
+.modal-footer button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: rgba(112, 248, 33, 0.6);
+  transform: rotate(45deg) scale(0);
+  transition: transform 0.5s;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.modal-footer button:hover {
+  transform: scale(1);
+  color: #000;
+  background-color: #fff;
+  border-color: greenyellow;
+}
+
+.modal-footer button:hover::before {
+  transform: rotate(45deg) scale(1);
+  opacity: 1;
+  transition-delay: 0.1s;
+  color: #fff;
+}
+
+/**/
+
+.form,
+* {
+  color: aqua;
+}
+
+.modal-content {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  border-color: aqua;
+}
+
+.form-select {
+  background-color: transparent;
+  color: #ccc;
+  border-color: aqua;
+}
+
+.form-select option {
+  background-color: #000;
+  color: #ccc;
+}
